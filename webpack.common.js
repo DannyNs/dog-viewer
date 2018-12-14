@@ -8,9 +8,12 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      inject: false,
+      inject: true,
       appMountId: 'root',
-      title: 'Hacker News',
+      title: 'Dog viewer',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+      },
       template: HtmlWebpackTemplate,
     }),
   ],

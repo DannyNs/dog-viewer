@@ -1,6 +1,6 @@
 # dog-viewer
 
-Simple app that fetches data from Flickr's public API
+Simple app that fetches dog images data from API
 
 ## To install dependencies use
 

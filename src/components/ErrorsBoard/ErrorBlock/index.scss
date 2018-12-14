@@ -1,0 +1,15 @@
+.dv-dog-error {
+
+  &__content {
+    margin: 10px;
+    padding: 10px;
+    z-index: 1000;
+    font-size: 1.5rem;
+    border: 1px solid red;
+    background-color: coral;
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}

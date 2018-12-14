@@ -1,0 +1,11 @@
+.dv-dog-loader {
+
+  &__content {
+    color: #222;
+    font-size: 80px;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+  }
+}
