@@ -20,7 +20,7 @@ class App extends React.Component {
 
   handleScroll = () => {
     const { dogsStore } = this.props;
-    const toBottom = window.innerHeight + document.documentElement.scrollTop + 100;
+    const toBottom = window.innerHeight + document.documentElement.scrollTop + 300;
     const height = document.documentElement.offsetHeight;
 
     if ((toBottom > height)) {
@@ -34,7 +34,6 @@ class App extends React.Component {
         dogs, loading, errors, showError,
       },
     } = this.props;
-    const keys = Object.keys(dogs);
 
     return (
       <div className="dv-app">
@@ -44,12 +43,8 @@ class App extends React.Component {
         }
         <div className="dv-app__container">
           {
-            keys
-              .map((key) => {
-                const dog = dogs[key];
-
-                return <DogImage key={dog.id} showError={showError} dog={dog} />;
-              })
+            Object.values(dogs)
+              .map(dog => <DogImage key={dog.id} showError={showError} dog={dog} />)
           }
         </div>
       </div>
